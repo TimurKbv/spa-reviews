@@ -8,7 +8,7 @@ export interface Review {
 }
 
 const ReviewItem: React.FC<Review> = ({ name, review, date, formatName }) => (
-  <div className="bg-white p-4 rounded shadow">
+  <div className="bg-white p-4 rounded shadow hover:bg-gray-50 transition-colors duration-300 hover:shadow-md">
     <h2 className="font-bold">{formatName && formatName(name)}</h2>
     <p>{review}</p>
     <p className="text-sm text-gray-500">{date}</p>

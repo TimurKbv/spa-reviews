@@ -14,8 +14,8 @@ const Pagination: React.FC<PaginationProps> = ({ pageNumbers, currentPage, setCu
         onClick={() => setCurrentPage(number)}
         className={`mx-1 px-3 py-1 rounded ${
           currentPage === number
-            ? "bg-slate-900 text-white"
-            : "bg-gray-200"
+            ? "bg-slate-900 text-white cursor-default"
+            : "bg-gray-200 hover:bg-gray-300 transition-colors"
         }`}
       >
         {number}
